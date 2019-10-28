@@ -1,17 +1,16 @@
-import junit.framework.*;
-
-public class JavaTest extends TestCase {
-   protected int value1, value2;
-   
-   // assigning the values
-   protected void setUp(){
-      value1 = 3;
-      value2 = 3;
-   }
-
-   // test method to add two values
-   public void testAdd(){
-      double result = value1 + value2;
-      assertTrue(result == 6);
-   }
+/*
+Java Hello World example.
+*/
+ 
+public class HelloWorldExample{
+ 
+  public static void main(String args[]){
+ 
+    /*
+    Use System.out.println() to print on console.
+    */
+    System.out.println("Hello World !");
+  
+  }
+ 
 }
