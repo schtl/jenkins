@@ -5,6 +5,7 @@
  */
 package bl;
 
+import org.junit.*;
 import java.util.Arrays;
 import java.util.Collection;
 import org.junit.After;
