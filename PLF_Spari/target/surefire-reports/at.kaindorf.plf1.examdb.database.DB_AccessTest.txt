@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: at.kaindorf.plf1.examdb.database.DB_AccessTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.282 sec
