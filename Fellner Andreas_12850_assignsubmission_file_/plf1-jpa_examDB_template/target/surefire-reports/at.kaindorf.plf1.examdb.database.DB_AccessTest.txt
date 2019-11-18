@@ -1,0 +1,48 @@
+-------------------------------------------------------------------------------
+Test set: at.kaindorf.plf1.examdb.database.DB_AccessTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE!
+at.kaindorf.plf1.examdb.database.DB_AccessTest.testGetStudentsByClassnameAndSubject()  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at at.kaindorf.plf1.examdb.database.DB_AccessTest.testGetStudentsByClassnameAndSubject(DB_AccessTest.java:96)
+
+at.kaindorf.plf1.examdb.database.DB_AccessTest.testCountStudentsFromGradeWithExamInTimePeriod2()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at at.kaindorf.plf1.examdb.database.DB_AccessTest.testCountStudentsFromGradeWithExamInTimePeriod2(DB_AccessTest.java:130)
+
+at.kaindorf.plf1.examdb.database.DB_AccessTest.testCountStudentsFromGradeWithExamInTimePeriod1()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at at.kaindorf.plf1.examdb.database.DB_AccessTest.testCountStudentsFromGradeWithExamInTimePeriod1(DB_AccessTest.java:117)
+
+at.kaindorf.plf1.examdb.database.DB_AccessTest.testImportClassnames()  Time elapsed: 0 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception thrown: java.lang.NullPointerException
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:53)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:35)
+	at org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:1230)
+	at at.kaindorf.plf1.examdb.database.DB_AccessTest.testImportClassnames(DB_AccessTest.java:75)
+Caused by: java.lang.NullPointerException
+	at at.kaindorf.plf1.examdb.database.DB_AccessTest.lambda$testImportClassnames$1(DB_AccessTest.java:76)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:48)
+	... 21 more
+
+at.kaindorf.plf1.examdb.database.DB_AccessTest.testGetInstance()  Time elapsed: 0 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:84)
+	at org.junit.jupiter.api.AssertNotNull.failNull(AssertNotNull.java:47)
+	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:36)
+	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:31)
+	at org.junit.jupiter.api.Assertions.assertNotNull(Assertions.java:258)
+	at at.kaindorf.plf1.examdb.database.DB_AccessTest.testGetInstance(DB_AccessTest.java:53)
+
+at.kaindorf.plf1.examdb.database.DB_AccessTest.testConnect()  Time elapsed: 0 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception thrown: java.lang.NullPointerException
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:53)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:35)
+	at org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:1230)
+	at at.kaindorf.plf1.examdb.database.DB_AccessTest.testConnect(DB_AccessTest.java:63)
+Caused by: java.lang.NullPointerException
+	at at.kaindorf.plf1.examdb.database.DB_AccessTest.lambda$testConnect$0(DB_AccessTest.java:64)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:48)
+	... 21 more
+
