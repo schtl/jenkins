@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="5" failures="4" name="at.kaindorf.plf1.booksdb.database.DB_AccessTest" time="0.649" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="12.0.2+10"/>
+    <property name="sun.boot.library.path" value="/home/sc/MNT-150GB/DEVEL-TOOLS/java/jdk-12.0.2/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/sc/MNT-150GB/NC/NOCOMMENT/SC_ALL/1920/1920_5xPOS/POS1_90BHIF_SC-SF-PLF Abgabe-12768/Feibel Sebastian_13102_assignsubmission_file_/feibel/plf1-jpa_booksDB_template"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="user.country" value="AT"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/sc/MNT-150GB/NC/NOCOMMENT/SC_ALL/1920/1920_5xPOS/POS1_90BHIF_SC-SF-PLF Abgabe-12768/Feibel Sebastian_13102_assignsubmission_file_/feibel/plf1-jpa_booksDB_template"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="12.0.2+10"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="maven.ext.class.path" value="/home/sc/MNT-150GB/DEVEL-TOOLS/netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/home/sc/MNT-150GB/DEVEL-TOOLS/netbeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="56.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="5.0.0-36-generic"/>
+    <property name="user.home" value="/home/sc"/>
+    <property name="user.timezone" value="Europe/Vienna"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="12"/>
+    <property name="user.name" value="sc"/>
+    <property name="java.class.path" value="/home/sc/MNT-150GB/DEVEL-TOOLS/netbeans/java/maven/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="12"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/home/sc/MNT-150GB/DEVEL-TOOLS/netbeans/java/maven-nblib/netbeans-eventspy.jar test"/>
+    <property name="java.home" value="/home/sc/MNT-150GB/DEVEL-TOOLS/java/jdk-12.0.2"/>
+    <property name="user.language" value="de"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="12.0.2"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/home/sc/MNT-150GB/DEVEL-TOOLS/netbeans/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2019-07-16"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.desktop" value="gnome"/>
+  </properties>
+  <testcase classname="at.kaindorf.plf1.booksdb.database.DB_AccessTest" name="at.kaindorf.plf1.booksdb.database.DB_AccessTest.testCountBooksOfAuthor" time="0.61">
+    <failure message="
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487
+Internal Exception: javax.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [booksdb] failed.
+Internal Exception: Exception [EclipseLink-7154] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [bookAuthors] in entity class [class at.kaindorf.plf1.booksdb.pojos.Author] has a mappedBy value of [bookauthor.author_id] which does not exist in its owning entity class [class at.kaindorf.plf1.booksdb.pojos.Bookauthor]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass." type="Local Exception Stack">Local Exception Stack: 
+Exception [EclipseLink-30005] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.PersistenceUnitLoadingException
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487
+Internal Exception: javax.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [booksdb] failed.
+Internal Exception: Exception [EclipseLink-7154] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [bookAuthors] in entity class [class at.kaindorf.plf1.booksdb.pojos.Author] has a mappedBy value of [bookauthor.author_id] which does not exist in its owning entity class [class at.kaindorf.plf1.booksdb.pojos.Bookauthor]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+	at org.eclipse.persistence.exceptions.PersistenceUnitLoadingException.exceptionSearchingForPersistenceResources(PersistenceUnitLoadingException.java:127)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:107)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:177)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at at.kaindorf.plf1.booksdb.database.DB_Access.connect(DB_Access.java:39)
+	at at.kaindorf.plf1.booksdb.database.DB_AccessTest.testCountBooksOfAuthor(DB_AccessTest.java:119)
+Caused by: javax.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [booksdb] failed.
+Internal Exception: Exception [EclipseLink-7154] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [bookAuthors] in entity class [class at.kaindorf.plf1.booksdb.pojos.Author] has a mappedBy value of [bookauthor.author_id] which does not exist in its owning entity class [class at.kaindorf.plf1.booksdb.pojos.Bookauthor]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.createPredeployFailedPersistenceException(EntityManagerSetupImpl.java:1954)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:1945)
+	at org.eclipse.persistence.internal.jpa.deployment.JPAInitializer.callPredeploy(JPAInitializer.java:98)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:96)
+	... 23 more
+Caused by: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [booksdb] failed.
+Internal Exception: Exception [EclipseLink-7154] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [bookAuthors] in entity class [class at.kaindorf.plf1.booksdb.pojos.Author] has a mappedBy value of [bookauthor.author_id] which does not exist in its owning entity class [class at.kaindorf.plf1.booksdb.pojos.Bookauthor]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+	at org.eclipse.persistence.exceptions.EntityManagerSetupException.predeployFailed(EntityManagerSetupException.java:230)
+	... 27 more
+Caused by: Exception [EclipseLink-7154] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [bookAuthors] in entity class [class at.kaindorf.plf1.booksdb.pojos.Author] has a mappedBy value of [bookauthor.author_id] which does not exist in its owning entity class [class at.kaindorf.plf1.booksdb.pojos.Bookauthor]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+	at org.eclipse.persistence.exceptions.ValidationException.noMappedByAttributeFound(ValidationException.java:1371)
+	at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.RelationshipAccessor.getOwningMapping(RelationshipAccessor.java:475)
+	at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.processOneToManyMapping(OneToManyAccessor.java:210)
+	at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.process(OneToManyAccessor.java:143)
+	at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processNonOwningRelationshipAccessors(MetadataProject.java:1566)
+	at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processStage3(MetadataProject.java:1855)
+	at org.eclipse.persistence.internal.jpa.metadata.MetadataProcessor.processORMMetadata(MetadataProcessor.java:580)
+	at org.eclipse.persistence.internal.jpa.deployment.PersistenceUnitProcessor.processORMetadata(PersistenceUnitProcessor.java:585)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:1869)
+	... 25 more
+</failure>
+    <system-out>countBooksOfAuthor
+</system-out>
+  </testcase>
+  <testcase classname="at.kaindorf.plf1.booksdb.database.DB_AccessTest" name="at.kaindorf.plf1.booksdb.database.DB_AccessTest.testCountBooksOfAuthor2" time="0.014">
+    <failure message="
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487
+Internal Exception: javax.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [booksdb] failed.
+Internal Exception: Exception [EclipseLink-7154] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [bookAuthors] in entity class [class at.kaindorf.plf1.booksdb.pojos.Author] has a mappedBy value of [bookauthor.author_id] which does not exist in its owning entity class [class at.kaindorf.plf1.booksdb.pojos.Bookauthor]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass." type="Local Exception Stack">Local Exception Stack: 
+Exception [EclipseLink-30005] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.PersistenceUnitLoadingException
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487
+Internal Exception: javax.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [booksdb] failed.
+Internal Exception: Exception [EclipseLink-7154] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [bookAuthors] in entity class [class at.kaindorf.plf1.booksdb.pojos.Author] has a mappedBy value of [bookauthor.author_id] which does not exist in its owning entity class [class at.kaindorf.plf1.booksdb.pojos.Bookauthor]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+	at org.eclipse.persistence.exceptions.PersistenceUnitLoadingException.exceptionSearchingForPersistenceResources(PersistenceUnitLoadingException.java:127)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:107)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:177)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at at.kaindorf.plf1.booksdb.database.DB_Access.connect(DB_Access.java:39)
+	at at.kaindorf.plf1.booksdb.database.DB_AccessTest.testCountBooksOfAuthor2(DB_AccessTest.java:134)
+Caused by: javax.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [booksdb] failed.
+Internal Exception: Exception [EclipseLink-7154] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [bookAuthors] in entity class [class at.kaindorf.plf1.booksdb.pojos.Author] has a mappedBy value of [bookauthor.author_id] which does not exist in its owning entity class [class at.kaindorf.plf1.booksdb.pojos.Bookauthor]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.createPredeployFailedPersistenceException(EntityManagerSetupImpl.java:1954)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:1945)
+	at org.eclipse.persistence.internal.jpa.deployment.JPAInitializer.callPredeploy(JPAInitializer.java:98)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:96)
+	... 23 more
+Caused by: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [booksdb] failed.
+Internal Exception: Exception [EclipseLink-7154] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [bookAuthors] in entity class [class at.kaindorf.plf1.booksdb.pojos.Author] has a mappedBy value of [bookauthor.author_id] which does not exist in its owning entity class [class at.kaindorf.plf1.booksdb.pojos.Bookauthor]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+	at org.eclipse.persistence.exceptions.EntityManagerSetupException.predeployFailed(EntityManagerSetupException.java:230)
+	... 27 more
+Caused by: Exception [EclipseLink-7154] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [bookAuthors] in entity class [class at.kaindorf.plf1.booksdb.pojos.Author] has a mappedBy value of [bookauthor.author_id] which does not exist in its owning entity class [class at.kaindorf.plf1.booksdb.pojos.Bookauthor]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+	at org.eclipse.persistence.exceptions.ValidationException.noMappedByAttributeFound(ValidationException.java:1371)
+	at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.RelationshipAccessor.getOwningMapping(RelationshipAccessor.java:475)
+	at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.processOneToManyMapping(OneToManyAccessor.java:210)
+	at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.process(OneToManyAccessor.java:143)
+	at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processNonOwningRelationshipAccessors(MetadataProject.java:1566)
+	at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processStage3(MetadataProject.java:1855)
+	at org.eclipse.persistence.internal.jpa.metadata.MetadataProcessor.processORMMetadata(MetadataProcessor.java:580)
+	at org.eclipse.persistence.internal.jpa.deployment.PersistenceUnitProcessor.processORMetadata(PersistenceUnitProcessor.java:585)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:1869)
+	... 25 more
+</failure>
+    <system-out>countBooksOfAuthor
+</system-out>
+  </testcase>
+  <testcase classname="at.kaindorf.plf1.booksdb.database.DB_AccessTest" name="at.kaindorf.plf1.booksdb.database.DB_AccessTest.testGetInstance" time="0"/>
+  <testcase classname="at.kaindorf.plf1.booksdb.database.DB_AccessTest" name="at.kaindorf.plf1.booksdb.database.DB_AccessTest.testConnect" time="0.014">
+    <failure message="Unexpected exception thrown: org.eclipse.persistence.exceptions.PersistenceUnitLoadingException" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Unexpected exception thrown: org.eclipse.persistence.exceptions.PersistenceUnitLoadingException
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:53)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:35)
+	at org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:1230)
+	at at.kaindorf.plf1.booksdb.database.DB_AccessTest.testConnect(DB_AccessTest.java:63)
+Caused by: Exception [EclipseLink-30005] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.PersistenceUnitLoadingException
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487
+Internal Exception: javax.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [booksdb] failed.
+Internal Exception: Exception [EclipseLink-7154] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [bookAuthors] in entity class [class at.kaindorf.plf1.booksdb.pojos.Author] has a mappedBy value of [bookauthor.author_id] which does not exist in its owning entity class [class at.kaindorf.plf1.booksdb.pojos.Bookauthor]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+	at org.eclipse.persistence.exceptions.PersistenceUnitLoadingException.exceptionSearchingForPersistenceResources(PersistenceUnitLoadingException.java:127)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:107)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:177)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at at.kaindorf.plf1.booksdb.database.DB_Access.connect(DB_Access.java:39)
+	at at.kaindorf.plf1.booksdb.database.DB_AccessTest.lambda$testConnect$0(DB_AccessTest.java:64)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:48)
+	... 21 more
+Caused by: javax.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [booksdb] failed.
+Internal Exception: Exception [EclipseLink-7154] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [bookAuthors] in entity class [class at.kaindorf.plf1.booksdb.pojos.Author] has a mappedBy value of [bookauthor.author_id] which does not exist in its owning entity class [class at.kaindorf.plf1.booksdb.pojos.Bookauthor]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.createPredeployFailedPersistenceException(EntityManagerSetupImpl.java:1954)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:1945)
+	at org.eclipse.persistence.internal.jpa.deployment.JPAInitializer.callPredeploy(JPAInitializer.java:98)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:96)
+	... 27 more
+Caused by: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [booksdb] failed.
+Internal Exception: Exception [EclipseLink-7154] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [bookAuthors] in entity class [class at.kaindorf.plf1.booksdb.pojos.Author] has a mappedBy value of [bookauthor.author_id] which does not exist in its owning entity class [class at.kaindorf.plf1.booksdb.pojos.Bookauthor]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+	at org.eclipse.persistence.exceptions.EntityManagerSetupException.predeployFailed(EntityManagerSetupException.java:230)
+	... 31 more
+Caused by: Exception [EclipseLink-7154] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [bookAuthors] in entity class [class at.kaindorf.plf1.booksdb.pojos.Author] has a mappedBy value of [bookauthor.author_id] which does not exist in its owning entity class [class at.kaindorf.plf1.booksdb.pojos.Bookauthor]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+	at org.eclipse.persistence.exceptions.ValidationException.noMappedByAttributeFound(ValidationException.java:1371)
+	at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.RelationshipAccessor.getOwningMapping(RelationshipAccessor.java:475)
+	at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.processOneToManyMapping(OneToManyAccessor.java:210)
+	at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.process(OneToManyAccessor.java:143)
+	at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processNonOwningRelationshipAccessors(MetadataProject.java:1566)
+	at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processStage3(MetadataProject.java:1855)
+	at org.eclipse.persistence.internal.jpa.metadata.MetadataProcessor.processORMMetadata(MetadataProcessor.java:580)
+	at org.eclipse.persistence.internal.jpa.deployment.PersistenceUnitProcessor.processORMetadata(PersistenceUnitProcessor.java:585)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:1869)
+	... 29 more
+</failure>
+    <system-out>connect/disconnect test
+</system-out>
+  </testcase>
+  <testcase classname="at.kaindorf.plf1.booksdb.database.DB_AccessTest" name="at.kaindorf.plf1.booksdb.database.DB_AccessTest.testGetAllAuthorsOfPublisher" time="0.011">
+    <failure message="
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487
+Internal Exception: javax.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [booksdb] failed.
+Internal Exception: Exception [EclipseLink-7154] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [bookAuthors] in entity class [class at.kaindorf.plf1.booksdb.pojos.Author] has a mappedBy value of [bookauthor.author_id] which does not exist in its owning entity class [class at.kaindorf.plf1.booksdb.pojos.Bookauthor]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass." type="Local Exception Stack">Local Exception Stack: 
+Exception [EclipseLink-30005] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.PersistenceUnitLoadingException
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487
+Internal Exception: javax.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [booksdb] failed.
+Internal Exception: Exception [EclipseLink-7154] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [bookAuthors] in entity class [class at.kaindorf.plf1.booksdb.pojos.Author] has a mappedBy value of [bookauthor.author_id] which does not exist in its owning entity class [class at.kaindorf.plf1.booksdb.pojos.Bookauthor]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+	at org.eclipse.persistence.exceptions.PersistenceUnitLoadingException.exceptionSearchingForPersistenceResources(PersistenceUnitLoadingException.java:127)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:107)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:177)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at at.kaindorf.plf1.booksdb.database.DB_Access.connect(DB_Access.java:39)
+	at at.kaindorf.plf1.booksdb.database.DB_AccessTest.testGetAllAuthorsOfPublisher(DB_AccessTest.java:100)
+Caused by: javax.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [booksdb] failed.
+Internal Exception: Exception [EclipseLink-7154] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [bookAuthors] in entity class [class at.kaindorf.plf1.booksdb.pojos.Author] has a mappedBy value of [bookauthor.author_id] which does not exist in its owning entity class [class at.kaindorf.plf1.booksdb.pojos.Bookauthor]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.createPredeployFailedPersistenceException(EntityManagerSetupImpl.java:1954)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:1945)
+	at org.eclipse.persistence.internal.jpa.deployment.JPAInitializer.callPredeploy(JPAInitializer.java:98)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:96)
+	... 23 more
+Caused by: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [booksdb] failed.
+Internal Exception: Exception [EclipseLink-7154] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [bookAuthors] in entity class [class at.kaindorf.plf1.booksdb.pojos.Author] has a mappedBy value of [bookauthor.author_id] which does not exist in its owning entity class [class at.kaindorf.plf1.booksdb.pojos.Bookauthor]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+	at org.eclipse.persistence.exceptions.EntityManagerSetupException.predeployFailed(EntityManagerSetupException.java:230)
+	... 27 more
+Caused by: Exception [EclipseLink-7154] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [bookAuthors] in entity class [class at.kaindorf.plf1.booksdb.pojos.Author] has a mappedBy value of [bookauthor.author_id] which does not exist in its owning entity class [class at.kaindorf.plf1.booksdb.pojos.Bookauthor]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+	at org.eclipse.persistence.exceptions.ValidationException.noMappedByAttributeFound(ValidationException.java:1371)
+	at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.RelationshipAccessor.getOwningMapping(RelationshipAccessor.java:475)
+	at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.processOneToManyMapping(OneToManyAccessor.java:210)
+	at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.process(OneToManyAccessor.java:143)
+	at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processNonOwningRelationshipAccessors(MetadataProject.java:1566)
+	at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processStage3(MetadataProject.java:1855)
+	at org.eclipse.persistence.internal.jpa.metadata.MetadataProcessor.processORMMetadata(MetadataProcessor.java:580)
+	at org.eclipse.persistence.internal.jpa.deployment.PersistenceUnitProcessor.processORMetadata(PersistenceUnitProcessor.java:585)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:1869)
+	... 25 more
+</failure>
+    <system-out>getAllAuthorsOfPublisher
+</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="4" failures="1" name="at.kaindorf.plf1.booksdb.pojos.PublisherTest" time="0.004" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="12.0.2+10"/>
+    <property name="sun.boot.library.path" value="/home/sc/MNT-150GB/DEVEL-TOOLS/java/jdk-12.0.2/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/sc/MNT-150GB/NC/NOCOMMENT/SC_ALL/1920/1920_5xPOS/POS1_90BHIF_SC-SF-PLF Abgabe-12768/Feibel Sebastian_13102_assignsubmission_file_/feibel/plf1-jpa_booksDB_template"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="user.country" value="AT"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/sc/MNT-150GB/NC/NOCOMMENT/SC_ALL/1920/1920_5xPOS/POS1_90BHIF_SC-SF-PLF Abgabe-12768/Feibel Sebastian_13102_assignsubmission_file_/feibel/plf1-jpa_booksDB_template"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="12.0.2+10"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="maven.ext.class.path" value="/home/sc/MNT-150GB/DEVEL-TOOLS/netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/home/sc/MNT-150GB/DEVEL-TOOLS/netbeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="56.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="5.0.0-36-generic"/>
+    <property name="user.home" value="/home/sc"/>
+    <property name="user.timezone" value="Europe/Vienna"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="12"/>
+    <property name="user.name" value="sc"/>
+    <property name="java.class.path" value="/home/sc/MNT-150GB/DEVEL-TOOLS/netbeans/java/maven/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="12"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/home/sc/MNT-150GB/DEVEL-TOOLS/netbeans/java/maven-nblib/netbeans-eventspy.jar test"/>
+    <property name="java.home" value="/home/sc/MNT-150GB/DEVEL-TOOLS/java/jdk-12.0.2"/>
+    <property name="user.language" value="de"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="12.0.2"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/home/sc/MNT-150GB/DEVEL-TOOLS/netbeans/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2019-07-16"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.desktop" value="gnome"/>
+  </properties>
+  <testcase classname="at.kaindorf.plf1.booksdb.pojos.PublisherTest" name="at.kaindorf.plf1.booksdb.pojos.PublisherTest.testClassAnnotation" time="0.002"/>
+  <testcase classname="at.kaindorf.plf1.booksdb.pojos.PublisherTest" name="at.kaindorf.plf1.booksdb.pojos.PublisherTest.testIdAnnotation" time="0.001"/>
+  <testcase classname="at.kaindorf.plf1.booksdb.pojos.PublisherTest" name="at.kaindorf.plf1.booksdb.pojos.PublisherTest.testGenValAnnotation" time="0"/>
+  <testcase classname="at.kaindorf.plf1.booksdb.pojos.PublisherTest" name="at.kaindorf.plf1.booksdb.pojos.PublisherTest.testOneToManyAnnotation" time="0.001">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:54)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:195)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:508)
+	at at.kaindorf.plf1.booksdb.pojos.PublisherTest.testOneToManyAnnotation(PublisherTest.java:88)
+</failure>
+    <system-out>@OneToMany-Annotation failed &lt;&lt;&lt;&lt;&lt;
+</system-out>
+  </testcase>
+</testsuite>

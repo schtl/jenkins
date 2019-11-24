@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: at.kaindorf.plf1.booksdb.pojos.BookauthorTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
+at.kaindorf.plf1.booksdb.pojos.BookauthorTest.testColumnAnnotationID2()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoSuchFieldException: bookId
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2416)
+	at at.kaindorf.plf1.booksdb.pojos.BookauthorTest.testColumnAnnotationID2(BookauthorTest.java:97)
+
+at.kaindorf.plf1.booksdb.pojos.BookauthorTest.testManyToOneAnnotation2()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoSuchFieldException: bookId
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2416)
+	at at.kaindorf.plf1.booksdb.pojos.BookauthorTest.testManyToOneAnnotation2(BookauthorTest.java:105)
+
+at.kaindorf.plf1.booksdb.pojos.BookauthorTest.testIdAnnotation()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NoSuchFieldException: authorId
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2416)
+	at at.kaindorf.plf1.booksdb.pojos.BookauthorTest.testIdAnnotation(BookauthorTest.java:62)
+
+at.kaindorf.plf1.booksdb.pojos.BookauthorTest.testColumnAnnotationID()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoSuchFieldException: authorId
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2416)
+	at at.kaindorf.plf1.booksdb.pojos.BookauthorTest.testColumnAnnotationID(BookauthorTest.java:71)
+
+at.kaindorf.plf1.booksdb.pojos.BookauthorTest.testManyToOneAnnotation()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoSuchFieldException: authorId
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2416)
+	at at.kaindorf.plf1.booksdb.pojos.BookauthorTest.testManyToOneAnnotation(BookauthorTest.java:79)
+
+at.kaindorf.plf1.booksdb.pojos.BookauthorTest.testIdAnnotation2()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoSuchFieldException: bookId
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2416)
+	at at.kaindorf.plf1.booksdb.pojos.BookauthorTest.testIdAnnotation2(BookauthorTest.java:88)
+
